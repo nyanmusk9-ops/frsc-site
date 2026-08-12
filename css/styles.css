@@ -1198,3 +1198,36 @@ table.data tr:nth-child(odd) td {
   .ca-note { display: none; }
   .ca-value { flex-basis: 100%; }
 }
+
+/* —— Masthead attribution stamp —— */
+.header-stamp {
+  margin: 0 8px 0 auto;
+  padding: 7px 14px;
+  flex-shrink: 0;
+  border: 1px solid var(--gold);
+  background: rgba(52, 67, 53, 0.32);
+  font-family: var(--serif);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold);
+  white-space: nowrap;
+  transform: rotate(-3deg);
+}
+
+.header-stamp span {
+  font-weight: 400;
+  font-style: italic;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+  opacity: 0.85;
+}
+
+@media (max-width: 900px) {
+  .header-stamp {
+    font-size: 14px;
+    padding: 5px 10px;
+    transform: none;
+  }
+}
