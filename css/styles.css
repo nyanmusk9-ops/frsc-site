@@ -1231,3 +1231,41 @@ table.data tr:nth-child(odd) td {
     transform: none;
   }
 }
+
+/* —— Per-entry source links (timeline) —— */
+.entry-src {
+  margin: 7px 0 0;
+  font-family: var(--sans);
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.entry-src > span {
+  display: inline-block;
+  margin-right: 6px;
+  padding: 1px 5px;
+  background: var(--inst-gray);
+  border: 1px solid var(--border);
+  text-transform: uppercase;
+  font-size: 9.5px;
+  letter-spacing: 0.07em;
+  color: var(--muted-olive);
+  vertical-align: 1px;
+}
+
+.entry-src a {
+  color: var(--forest);
+  text-decoration: underline;
+}
+
+.entry-src a + a {
+  margin-left: 4px;
+  padding-left: 10px;
+  border-left: 1px solid var(--border);
+}
+
+.entry-src a::before {
+  content: "\2192\00a0";
+  text-decoration: none;
+}
