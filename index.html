@@ -1,45 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Federal Reserve Coin ($FRSC) &mdash; Research Portal</title>
-  <meta name="description" content="Federal Reserve Coin ($FRSC). Launched on Bitcointalk in 2014. Reborn on BNB Chain. Institutional archive and public information portal.">
-  <meta property="og:title" content="Federal Reserve Coin ($FRSC) — Research Portal">
-  <meta property="og:description" content="Launched on Bitcointalk in 2014. Reborn on BNB Chain. Community research archive.">
-  <meta property="og:image" content="assets/frsc-seal.png">
-  <meta name="theme-color" content="#0B0E11">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="assets/frsc-seal.png" type="image/png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Federal Reserve Coin — Historical Case File</title>
+  <meta name="description" content="Federal Reserve Coin (FRSC): a 2014 Bitcointalk artifact timed to the Fed's centennial. Public research on the concept, the archive, and the btcpay86 record." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/seal.png" type="image/png" />
 </head>
 <body>
   <div class="topbar">
     <div class="wrap">
-      <span>Est. January 2014 &middot; Bitcointalk &middot; Reborn on BNB Chain</span>
+      <span>Est. January 2014 · Bitcointalk · Community research archive</span>
       <ul class="topbar-links">
-        <li><a href="#receipts">Verify sources</a></li>
-        <li><a href="#tokenomics">Issuance</a></li>
+        <li><a href="#concept">The concept</a></li>
+        <li><a href="#btcpay86">btcpay86</a></li>
+        <li><a href="#receipts">Receipts</a></li>
         <li><a href="#faq">FAQs</a></li>
-        <li><a href="https://t.me/" target="_blank" rel="noopener noreferrer" data-link="telegram">Telegram</a></li>
-        <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" data-link="x">X / Twitter</a></li>
       </ul>
     </div>
   </div>
 
   <header class="site-header">
     <div class="wrap header-inner">
-      <img class="header-seal" src="assets/frsc-seal.png" width="72" height="72" alt="Federal Reserve Coin emblem">
+      <img class="header-seal" src="assets/seal.png" width="72" height="72" alt="Federal Reserve Coin emblem" />
       <div class="header-text">
         <h1>Federal Reserve Coin</h1>
-        <p class="subtitle">A joke coin timed to the Fed's 100th birthday. The punchline outlived the chain. Research archive and public case file for $FRSC.</p>
+        <p class="subtitle">A joke about the money printer, posted on Bitcointalk in 2014 — timed to the Fed's 100th birthday. This portal is a case file for the concept and the public record behind it.</p>
       </div>
-      <form class="header-search" role="search" onsubmit="return false;">
-        <label for="q">Site search</label>
+      <form class="header-search" role="search" action="#" method="get" onsubmit="return false;">
+        <label for="q">Archive search</label>
         <div class="search-row">
-          <input id="q" name="q" type="search" placeholder="Search archive&hellip;" autocomplete="off">
+          <input id="q" name="q" type="search" placeholder="Search case file…" />
           <button type="submit">Search</button>
         </div>
-        <p class="search-status" id="search-status" role="status"></p>
       </form>
     </div>
   </header>
@@ -47,12 +41,13 @@
   <nav class="main-nav" aria-label="Primary">
     <div class="wrap">
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#lore">Research</a></li>
-        <li><a href="#tokenomics">Issuance</a></li>
-        <li><a href="#spec">Documents</a></li>
-        <li><a href="#buy">Data</a></li>
-        <li><a href="#roadmap">Roadmap</a></li>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#concept">Concept</a></li>
+        <li><a href="#lore">Timeline</a></li>
+        <li><a href="#btcpay86">btcpay86</a></li>
+        <li><a href="#receipts">Receipts</a></li>
+        <li><a href="#spec">2014 Archive</a></li>
+        <li><a href="#appendix">Appendix</a></li>
         <li><a href="#faq">About</a></li>
       </ul>
     </div>
@@ -60,104 +55,236 @@
 
   <div class="status-strip">
     <div class="wrap">
-      <span><strong>Classification:</strong> Community research &middot; <strong>Confidence:</strong> High (launch thread) / Medium (attribution)</span>
-      <span>Last reviewed: August 2026 &middot; Contract TBA &mdash; BNB Chain</span>
+      <span><strong>Classification:</strong> Community research · <strong>Focus:</strong> Concept &amp; historical attribution</span>
+      <span>Confidence: High (launch thread) / Medium (btcpay86 → CZ) · Last reviewed: August 2026</span>
     </div>
   </div>
 
   <main class="page" id="home">
     <div class="wrap layout">
       <div class="main-col">
-        <!-- Case file / artifact intro -->
+
+        <!-- Intro -->
         <section class="section" aria-labelledby="intro-title">
           <div class="section-head">
-            <p class="kicker">Case file &middot; Artifact overview</p>
-            <h2 id="intro-title">Federal Reserve Coin ($FRSC)</h2>
-            <p class="section-note">Bitcointalk, January 2014 &middot; Scrypt PoW chain (defunct) &middot; BEP-20 revival on BNB Chain</p>
+            <p class="kicker">Case file · Opening brief</p>
+            <h2 id="intro-title">What is Federal Reserve Coin?</h2>
+            <p class="section-note">Not a product pitch. An artifact from early crypto culture — and a paper trail worth reading.</p>
           </div>
-          <hr class="hr">
+          <hr class="hr" />
           <div class="panel">
             <div class="intro-grid">
-              <img class="intro-seal" src="assets/frsc-seal.png" width="100" height="100" alt="FRSC seal">
+              <img class="intro-seal" src="assets/seal.png" width="100" height="100" alt="FRSC seal" />
               <div>
                 <p class="thesis">A joke coin timed to the Fed's 100th birthday. The punchline outlived the chain.</p>
-                <p class="intro-lead">In January 2014, on the Federal Reserve's centennial, a Bitcointalk account named <strong>btcpay86</strong> launched Federal Reserve Coin &mdash; a virtual currency dedicated to a century of "printing," and to the people who kept paying for it. The original chain faded. The domain lapsed. The site survives in the Wayback Machine. The ticker returned on BNB Chain.</p>
-                <p class="intro-lead attribution-note">The launching account was <strong>btcpay86</strong> (user 202137). The public record is below. Draw your own conclusion.</p>
+                <p class="intro-lead">In January 2014, while the Federal Reserve marked a century of existence and began tapering quantitative easing, a Bitcointalk user named <strong>btcpay86</strong> announced Federal Reserve Coin (FRSC): a virtual currency dedicated to "printing," complete with a seal, a motto, and a disclaimer that it was <em>not</em> the Fed's official website.</p>
+                <p class="intro-lead">The coin itself nearly vanished. The idea did not. This site documents the <strong>concept</strong>, the <strong>2014 archive</strong>, and the <strong>public forum record</strong> that researchers use when they ask whether btcpay86 was Changpeng Zhao (CZ) — years before Binance.</p>
                 <div class="dossier-meta">
-                  <div><span class="dm-label">Origin</span><span class="dm-val">Bitcointalk ANN &middot; Jan 2014</span></div>
+                  <div><span class="dm-label">Origin</span><span class="dm-val">Bitcointalk ANN · Jan 2014</span></div>
                   <div><span class="dm-label">Motto</span><span class="dm-val">WILL NOT BE DEVALUED COINS</span></div>
-                  <div><span class="dm-label">Evidence</span><span class="dm-val"><a href="#receipts">Open the receipts &rarr;</a></span></div>
-                  <div><span class="dm-label">Issuance</span><span class="dm-val"><a href="#tokenomics">Rules of the new issuance &rarr;</a></span></div>
+                  <div><span class="dm-label">Account</span><span class="dm-val">btcpay86 · user 202137</span></div>
+                  <div><span class="dm-label">Evidence</span><span class="dm-val"><a href="#receipts">Open the receipts →</a></span></div>
                 </div>
                 <div class="btn-row">
-                  <a class="btn" href="#lore">Read the case file</a>
+                  <a class="btn" href="#concept">The concept</a>
+                  <a class="btn btn-ghost" href="#btcpay86">The btcpay86 file</a>
                   <a class="btn btn-ghost" href="#receipts">Verify sources</a>
-                  <a class="btn btn-ghost" href="#buy">How to participate</a>
                 </div>
               </div>
             </div>
             <div class="stat-row" role="list">
-              <div class="stat" role="listitem"><span class="n">2014</span><span class="l">Original launch</span></div>
+              <div class="stat" role="listitem"><span class="n">2014</span><span class="l">ANN launch</span></div>
               <div class="stat" role="listitem"><span class="n">100</span><span class="l">Years of the Fed</span></div>
+              <div class="stat" role="listitem"><span class="n">202137</span><span class="l">btcpay86 user ID</span></div>
               <div class="stat" role="listitem"><span class="n">31</span><span class="l">Wayback captures</span></div>
-              <div class="stat" role="listitem"><span class="n">BNB</span><span class="l">Chain revival</span></div>
-              <div class="stat" role="listitem"><span class="n">0/0</span><span class="l">Tax (new issuance)</span></div>
+              <div class="stat" role="listitem"><span class="n">∞</span><span class="l">Original mining time</span></div>
             </div>
             <div class="dedicate">Dedicate to 100 Years of the Federal Reserve</div>
           </div>
         </section>
 
-        <!-- Lore -->
+        <!-- Concept -->
+        <section class="section" id="concept" aria-labelledby="concept-title">
+          <div class="section-head">
+            <p class="kicker">Thesis</p>
+            <h2 id="concept-title">The concept: mocking the printer</h2>
+            <p class="section-note">FRSC was satire dressed as a coin — central banking as a meme, before "meme coin" was a category.</p>
+          </div>
+          <hr class="hr" />
+          <div class="panel">
+            <p class="intro-lead">The Federal Reserve's first century was also the age of QE: emergency policy that critics nicknamed the printing machine. On December 18, 2013, the Fed announced it would taper bond purchases. A month later — on the institution's 100th birthday window — FRSC appeared as a tongue-in-cheek "virtual currency" so holders could "feel the true meaning of the Federal Reserve system."</p>
+            <p class="intro-lead">The joke had structure. A seal. A motto in capitals. Emission rules that deliberately echoed monetary tinkering. A homepage that insisted it was unofficial. It was not trying to be the next Litecoin clone; it was trying to be a punchline with a blockchain.</p>
+            <table class="data" style="margin-top:12px;">
+              <thead>
+                <tr>
+                  <th>Idea</th>
+                  <th>How FRSC played it</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Centennial timing</td>
+                  <td>Launched against the Fed's 100-year mark — dedication as branding</td>
+                </tr>
+                <tr>
+                  <td>QE / "printing"</td>
+                  <td>Site copy framed the coin as a response to five years of easy money</td>
+                </tr>
+                <tr>
+                  <td>Credibility theater</td>
+                  <td>Institutional seal + formal tone + "This's Not The Fed's Official Website"</td>
+                </tr>
+                <tr>
+                  <td>Hard money irony</td>
+                  <td>Motto: <strong>WILL NOT BE DEVALUED COINS</strong> — the opposite of what the joke accused the Fed of doing</td>
+                </tr>
+                <tr>
+                  <td>Infinite mining</td>
+                  <td>Original chain: infinite mining time — the printer never fully shuts off</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="disclaimer" style="margin-top:12px;">The concept is the product. Everything else — chain, domain, ticker revival — is costume around that joke.</p>
+          </div>
+        </section>
+
+        <!-- Timeline -->
         <section class="section" id="lore" aria-labelledby="lore-title">
           <div class="section-head">
             <p class="kicker">Historical record</p>
-            <h2 id="lore-title">The coin that mocked the money printer</h2>
-            <p class="section-note">Federal Reserve Coin wasn't a fork of a fork. It was a joke about central banking, posted in public, then nearly forgotten &mdash; until the ticker came back.</p>
+            <h2 id="lore-title">Timeline of the artifact</h2>
+            <p class="section-note">From taper announcement to archive dust — then the story resurfaces.</p>
           </div>
-          <hr class="hr">
+          <hr class="hr" />
           <div class="panel">
             <ol class="timeline">
               <li>
                 <div class="when">Dec 2013</div>
                 <div>
                   <h3>The Fed blinks</h3>
-                  <p>On December 18, 2013 the Fed announced the taper of quantitative easing &mdash; monthly bond purchases cut from $85B toward $75B. Five years of the "printing machine" had a name, and crypto had a punchline.</p>
+                  <p>The Fed announces the taper of quantitative easing. "Printing machine" policy finally has an exit narrative — and crypto culture has fresh material.</p>
                 </div>
               </li>
               <li>
                 <div class="when">Jan 2014</div>
                 <div>
-                  <h3>$FRSC is born</h3>
-                  <p>FRSC launches on Bitcointalk, timed to the Federal Reserve's 100th birthday &mdash; a virtual currency dedicated to a century of "printing", and to the people who kept paying for it. Tagline on the original site: <strong>WILL NOT BE DEVALUED COINS.</strong></p>
+                  <h3>FRSC is announced</h3>
+                  <p>btcpay86 posts the [ANN] Federal Reserve Coin thread on Bitcointalk. A site goes up at federalreservecoin.org. Scrypt, one-minute blocks, a seal, a motto.</p>
                 </div>
               </li>
               <li>
                 <div class="when">2014</div>
                 <div>
-                  <h3>The launching account: btcpay86</h3>
-                  <p>User 202137 posted under the name btcpay86. The post history reads like early-crypto infrastructure work: wallet support, exchange plumbing, and &mdash; if you translate the page and search &mdash; repeated references to blockchain.info, where Changpeng Zhao (CZ) worked before Binance. The record is public. Attribution is for the reader.</p>
+                  <h3>The account keeps posting</h3>
+                  <p>Away from the ANN thread, user 202137's history looks like infrastructure work: wallets, exchanges, and public answers about blockchain.info — the company CZ has said he worked at before founding Binance.</p>
                 </div>
               </li>
               <li>
-                <div class="when">2015&ndash;2024</div>
+                <div class="when">2015–2024</div>
                 <div>
                   <h3>The missing years</h3>
-                  <p>The scrypt chain went quiet. Mining interest dried up. federalreservecoin.org lapsed; about 31 Wayback captures remain between January 2014 and November 2020 &mdash; wallet downloads, pool links, and the disclaimer: "This's Not The Fed's Official Website." The artifact outlived the network.</p>
+                  <p>Interest in the chain fades. The domain lapses. Roughly 31 Wayback captures remain (Jan 2014–Nov 2020): downloads, pools, the unofficial disclaimer. The joke survives as residue.</p>
                 </div>
               </li>
               <li>
-                <div class="when">2025&ndash;</div>
+                <div class="when">Later</div>
                 <div>
-                  <h3>The seal returns</h3>
-                  <p>The ticker doesn't die. $FRSC is reborn as a BEP-20 on BNB Chain &mdash; same seal, same joke, new issuance rules. Community research, not an official revival by any named founder or exchange.</p>
+                  <h3>The story returns</h3>
+                  <p>Researchers and communities rediscover the ANN, the seal, and the btcpay86 trail. The ticker and imagery get new life in crypto culture — as lore first, market instrument second. This file is about that lore.</p>
                 </div>
               </li>
             </ol>
-            <div class="source-links">
-              <strong>Primary sources</strong>
+          </div>
+        </section>
+
+        <!-- btcpay86 / CZ narrative -->
+        <section class="section" id="btcpay86" aria-labelledby="btcpay86-title">
+          <div class="section-head">
+            <p class="kicker">Attribution file</p>
+            <h2 id="btcpay86-title">btcpay86 and the CZ question</h2>
+            <p class="section-note">The interesting claim is not "buy this." It is: <em>who posted the joke — and does the public record point to CZ?</em></p>
+          </div>
+          <hr class="hr" />
+          <div class="panel">
+            <p class="intro-lead">Changpeng Zhao is publicly associated with an early career at blockchain.info / Blockchain.com, then with building Binance. Separately, Bitcointalk user <strong>202137</strong> (display name <strong>btcpay86</strong>) launched FRSC and left a trail of posts that look like hands-on crypto ops work in the same era.</p>
+            <p class="intro-lead attribution-note">This portal does <strong>not</strong> treat identity as proven. It lays out why people make the connection — and links the primary sources so you can test it.</p>
+
+            <h3 style="font-size:15px;margin:14px 0 6px;">Why researchers connect the dots</h3>
+            <table class="data">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Observation</th>
+                  <th>Why it matters</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>btcpay86 authored the FRSC ANN (topic 493871)</td>
+                  <td>Establishes the account as the launcher of the concept</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>User 202137 post history spans wallets, exchanges, support</td>
+                  <td>Profile matches an operator, not a drive-by meme poster</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Posts discuss blockchain.info work in public (2014)</td>
+                  <td>Aligns with CZ's known pre-Binance employment</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Timing sits in the "early CZ" internet years</td>
+                  <td>Years before Binance made him globally famous</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>No known official confirmation on this portal</td>
+                  <td>Community inference ≠ endorsement by CZ or Binance</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 style="font-size:15px;margin:14px 0 6px;">How to inspect the record yourself</h3>
+            <ol class="steps">
+              <li>
+                <div class="step-n">1</div>
+                <div>
+                  <h3>Open the ANN</h3>
+                  <p>Read topic 493871 — the original Federal Reserve Coin announcement and the voice of the launch.</p>
+                </div>
+              </li>
+              <li>
+                <div class="step-n">2</div>
+                <div>
+                  <h3>Open user 202137's posts</h3>
+                  <p>Load the full post history. Use your browser's translate if needed.</p>
+                </div>
+              </li>
+              <li>
+                <div class="step-n">3</div>
+                <div>
+                  <h3>Search for blockchain.info</h3>
+                  <p>Find where the account answers support questions and talks about working there. Compare that to CZ's public biography.</p>
+                </div>
+              </li>
+              <li>
+                <div class="step-n">4</div>
+                <div>
+                  <h3>Decide what you believe</h3>
+                  <p>High confidence that btcpay86 launched FRSC. Medium confidence — reader's call — on the CZ identification. The receipts are public either way.</p>
+                </div>
+              </li>
+            </ol>
+
+            <div class="source-links" style="margin-top:12px;">
+              <strong>Start here</strong>
               <ol>
-                <li>ANN thread &rarr; <a href="https://bitcointalk.org/index.php?topic=493871.0" target="_blank" rel="noopener noreferrer">topic=493871</a></li>
-                <li>Post history &rarr; <a href="https://bitcointalk.org/index.php?action=profile;u=202137;sa=showPosts" target="_blank" rel="noopener noreferrer">user 202137</a></li>
+                <li>ANN → <a href="https://bitcointalk.org/index.php?topic=493871.0" target="_blank" rel="noopener noreferrer">topic=493871</a></li>
+                <li>Posts → <a href="https://bitcointalk.org/index.php?action=profile;u=202137;sa=showPosts" target="_blank" rel="noopener noreferrer">user 202137</a></li>
+                <li>blockchain.info thread sample → <a href="https://bitcointalk.org/index.php?topic=608394.msg6722268#msg6722268" target="_blank" rel="noopener noreferrer">msg6722268</a></li>
               </ol>
             </div>
           </div>
@@ -168,222 +295,112 @@
           <div class="section-head">
             <p class="kicker">Verify, don't trust</p>
             <h2 id="receipts-title">The receipts</h2>
-            <p class="section-note">Every claim on this page is a public forum post. Open them yourself.</p>
+            <p class="section-note">Primary sources only. Every narrative claim on this page should survive contact with these links.</p>
           </div>
-          <hr class="hr">
+          <hr class="hr" />
           <div class="panel">
             <article class="receipt">
               <div class="num">01</div>
               <div>
                 <h3>The launch thread</h3>
-                <p>The original 2014 [ANN] Federal Reserve Coin announcement on Bitcointalk, posted by btcpay86.</p>
+                <p>Original 2014 [ANN] Federal Reserve Coin announcement on Bitcointalk, posted by btcpay86 — the root document for the concept.</p>
                 <p class="src"><a href="https://bitcointalk.org/index.php?topic=493871.0" target="_blank" rel="noopener noreferrer">bitcointalk.org/index.php?topic=493871.0</a></p>
               </div>
             </article>
             <article class="receipt">
               <div class="num">02</div>
               <div>
-                <h3>btcpay86 &mdash; post history</h3>
-                <p>The full post history of user 202137. Turn on your browser's translate, then search the page for blockchain.info &mdash; a workplace that matches CZ's public r&eacute;sum&eacute; before Binance. Compare the record yourself.</p>
-                <p class="src"><a href="https://bitcointalk.org/index.php?action=profile;u=202137;sa=showPosts" target="_blank" rel="noopener noreferrer">&hellip;action=profile;u=202137;sa=showPosts</a></p>
+                <h3>btcpay86 — complete post history</h3>
+                <p>User 202137. Translate the page, then search for blockchain.info. This is the core of the CZ attribution debate.</p>
+                <p class="src"><a href="https://bitcointalk.org/index.php?action=profile;u=202137;sa=showPosts" target="_blank" rel="noopener noreferrer">…action=profile;u=202137;sa=showPosts</a></p>
               </div>
             </article>
             <article class="receipt">
               <div class="num">03</div>
               <div>
                 <h3>Answering for blockchain.info</h3>
-                <p>The same account repeatedly fields blockchain.info support questions and talks about his role there &mdash; in public, on the record, in 2014.</p>
-                <p class="src"><a href="https://bitcointalk.org/index.php?topic=608394.msg6722268#msg6722268" target="_blank" rel="noopener noreferrer">&hellip;topic=608394.msg6722268#msg6722268</a></p>
+                <p>The same account fields blockchain.info support questions and discusses his role — in public, on the record, in 2014.</p>
+                <p class="src"><a href="https://bitcointalk.org/index.php?topic=608394.msg6722268#msg6722268" target="_blank" rel="noopener noreferrer">…topic=608394.msg6722268#msg6722268</a></p>
               </div>
             </article>
             <article class="receipt">
               <div class="num">04</div>
               <div>
-                <h3>The original website</h3>
-                <p>federalreservecoin.org, 31 captures between Jan 2014 and Nov 2020 &mdash; the seal, the wallet downloads, the mining pools, the disclaimer: "This's Not The Fed's Official Website."</p>
-                <p class="src"><a href="https://web.archive.org/web/*/http://federalreservecoin.org/" target="_blank" rel="noopener noreferrer">web.archive.org &rarr; federalreservecoin.org</a></p>
+                <h3>The original website (Wayback)</h3>
+                <p>federalreservecoin.org — seal, wallet downloads, mining pools, and the line: "This's Not The Fed's Official Website." ~31 captures, Jan 2014–Nov 2020.</p>
+                <p class="src"><a href="https://web.archive.org/web/*/http://federalreservecoin.org/" target="_blank" rel="noopener noreferrer">web.archive.org → federalreservecoin.org</a></p>
               </div>
             </article>
-            <p class="disclaimer">Community research, not an official statement. $FRSC is a memecoin with no affiliation to CZ, Binance, BNB Chain, blockchain.info or the Federal Reserve System.</p>
+            <p class="disclaimer">Community research, not an official statement. This archive has no affiliation with CZ, Binance, BNB Chain, blockchain.info / Blockchain.com, or the Federal Reserve System.</p>
           </div>
         </section>
 
-        <!-- Spec sheet -->
+        <!-- 2014 spec -->
         <section class="section" id="spec" aria-labelledby="spec-title">
           <div class="section-head">
             <p class="kicker">Declassified</p>
             <h2 id="spec-title">The original 2014 spec sheet</h2>
-            <p class="section-note">Reproduced from federalreservecoin.org as it stood in February 2014.</p>
+            <p class="section-note">How the joke was engineered — reproduced from federalreservecoin.org (February 2014 capture).</p>
           </div>
-          <hr class="hr">
+          <hr class="hr" />
           <div class="panel">
-            <p class="spec-quote"><code>http://federalreservecoin.org/</code> &middot; capture: 28 FEB 2014</p>
+            <p class="spec-quote"><code>http://federalreservecoin.org/</code> · capture: 28 FEB 2014</p>
             <ul class="spec-list">
               <li>FRSC was born in the Federal Reserve 100th birthday. This's a virtual currency, let us feel the true meaning of the Federal Reserve system.</li>
-              <li>December 18, 2013, the Fed announced its withdrawal of quantitative easing (QE), its withdrawal from January 2014, the monthly scale bond purchases will be reduced from 10 billion to 75 billion U.S. Five years ago, the Fed opened a lot of people have been likened to "printing machine" QE monetary policy.</li>
+              <li>December 18, 2013, the Fed announced its withdrawal of quantitative easing (QE)… Five years ago, the Fed opened a lot of people have been likened to "printing machine" QE monetary policy.</li>
               <li>FRSC use scrypt algorithm, produce one block per minute, each block of the first year a 20% reduction coins every 30 days, in the second year unchanged, third year decreased by 50% per year, the total mining time is infinite.</li>
-              <li>Open Source download: Local Download &mdash; port 5895, rpc port 5894.</li>
+              <li>Open Source download: Local Download — port 5895, rpc port 5894.</li>
             </ul>
             <table class="data">
               <thead>
                 <tr>
                   <th>Parameter</th>
-                  <th>Value</th>
+                  <th>Value (2014 chain)</th>
                 </tr>
               </thead>
               <tbody>
                 <tr><td>Algorithm</td><td>Scrypt</td></tr>
                 <tr><td>Block time</td><td>60 s</td></tr>
-                <tr><td>Year 1 emission</td><td>&minus;20% / 30 days</td></tr>
+                <tr><td>Year 1 emission</td><td>−20% / 30 days</td></tr>
                 <tr><td>Year 2</td><td>Unchanged</td></tr>
-                <tr><td>Year 3+</td><td>&minus;50% / year</td></tr>
+                <tr><td>Year 3+</td><td>−50% / year</td></tr>
                 <tr><td>Mining time</td><td>Infinite</td></tr>
               </tbody>
             </table>
-            <p class="meta" style="margin-top:10px;">E-mail: admin@federalreservecoin.org &middot; This's Not The Fed's Official Website.</p>
+            <p class="meta" style="margin-top:10px;">E-mail: admin@federalreservecoin.org · This's Not The Fed's Official Website.</p>
           </div>
         </section>
 
-        <!-- Tokenomics -->
-        <section class="section" id="tokenomics" aria-labelledby="tokenomics-title">
+        <!-- Thin appendix for contemporary token -->
+        <section class="section" id="appendix" aria-labelledby="appendix-title">
           <div class="section-head">
-            <p class="kicker">Monetary policy</p>
-            <h2 id="tokenomics-title">Rules of the new issuance</h2>
-            <p class="section-note">Hard capped. No mint function. No taper announcements at 2pm.</p>
+            <p class="kicker">Appendix · Contemporary note</p>
+            <h2 id="appendix-title">About the modern ticker</h2>
+            <p class="section-note">Secondary to this archive. Included for readers who encounter $FRSC in today's markets.</p>
           </div>
-          <hr class="hr">
-          <div class="panel">
+          <hr class="hr" />
+          <div class="panel panel-muted">
+            <p class="intro-lead">Communities have revived the <strong>FRSC</strong> name, seal, and story as a BEP-20 ticker on BNB Chain. That issuance is a <em>cultural continuation</em> of the 2014 concept — not the original scrypt chain, and not an official project of CZ, Binance, or the Federal Reserve.</p>
             <div class="contract-box">
               <span class="label">Contract</span>
-              <code id="contract-address">TBA &mdash; launching on BNB Chain</code>
-              <button type="button" class="btn" id="copy-contract">Copy</button>
+              <code id="contract-address">TBA — if / when published</code>
+              <button type="button" class="btn" id="copy-contract" data-copy="TBA — if / when published">Copy</button>
             </div>
-            <ul class="pill-list" style="margin-bottom:12px;">
-              <li>0% buy / 0% sell tax</li>
-              <li>LP burned</li>
-              <li>Contract renounced</li>
-              <li>100% fair launch</li>
-            </ul>
-            <p class="supply-callout">1,000,000,000<span>$FRSC total supply</span></p>
-            <table class="data alloc-table">
+            <table class="data">
               <thead>
                 <tr>
-                  <th>%</th>
-                  <th>Allocation</th>
+                  <th>Item</th>
+                  <th>Note</th>
                 </tr>
               </thead>
               <tbody>
-                <tr><td>90%</td><td>Liquidity pool &mdash; LP burned at launch, forever unpullable</td></tr>
-                <tr><td>5%</td><td>CEX listings &amp; market making</td></tr>
-                <tr><td>5%</td><td>Community rewards, raids &amp; the FOMC treasury</td></tr>
-                <tr><td>0%</td><td>Team allocation. The Fed prints; we don't.</td></tr>
+                <tr><td>Relationship to 2014</td><td>Same joke, seal, and ticker mythology — different technical system</td></tr>
+                <tr><td>Network</td><td>BNB Smart Chain (BEP-20), when live</td></tr>
+                <tr><td>Stated market norms</td><td>Fair launch posture; 0/0 tax; LP burn / renounce often cited by community</td></tr>
+                <tr><td>This site's priority</td><td>History and attribution — not price, listings, or buy tutorials</td></tr>
               </tbody>
             </table>
-            <div class="badge-row">
-              <span>Contract renounced</span>
-              <span>Liquidity burned</span>
-              <span>0 / 0 tax forever</span>
-              <span>No mint, no blacklist, no pause</span>
-              <span>Audit &amp; KYC on the way</span>
-            </div>
-          </div>
-        </section>
-
-        <!-- How to buy -->
-        <section class="section" id="buy" aria-labelledby="buy-title">
-          <div class="section-head">
-            <p class="kicker">Open market operations</p>
-            <h2 id="buy-title">How to buy $FRSC</h2>
-            <p class="section-note">Four steps. No 12-member committee required.</p>
-          </div>
-          <hr class="hr">
-          <div class="panel">
-            <ol class="steps">
-              <li>
-                <div class="step-n">1</div>
-                <div>
-                  <h3>Get a wallet</h3>
-                  <p>Install Binance Wallet, MetaMask or Trust Wallet and switch the network to BNB Smart Chain.</p>
-                </div>
-              </li>
-              <li>
-                <div class="step-n">2</div>
-                <div>
-                  <h3>Fund it with BNB</h3>
-                  <p>Buy BNB on any exchange and withdraw it to your wallet address on BNB Chain. Keep a little for gas.</p>
-                </div>
-              </li>
-              <li>
-                <div class="step-n">3</div>
-                <div>
-                  <h3>Open PancakeSwap</h3>
-                  <p>Connect your wallet, paste the $FRSC contract address above into the token field and confirm it.</p>
-                </div>
-              </li>
-              <li>
-                <div class="step-n">4</div>
-                <div>
-                  <h3>Swap &amp; hold</h3>
-                  <p>Swap BNB for $FRSC, confirm the transaction, and file your own copy of the record.</p>
-                </div>
-              </li>
-            </ol>
-            <div class="btn-row">
-              <a class="btn" href="https://pancakeswap.finance/" target="_blank" rel="noopener noreferrer" data-link="swap">Open PancakeSwap</a>
-              <a class="btn btn-ghost" href="https://dexscreener.com/bsc" target="_blank" rel="noopener noreferrer" data-link="chart">Live chart</a>
-            </div>
-          </div>
-        </section>
-
-        <!-- Roadmap as FOMC minutes -->
-        <section class="section" id="roadmap" aria-labelledby="roadmap-title">
-          <div class="section-head">
-            <p class="kicker">FOMC minutes</p>
-            <h2 id="roadmap-title">Program of work</h2>
-            <p class="section-note">Released without redactions. Same substance as a roadmap &mdash; written like the institution is taking minutes.</p>
-          </div>
-          <hr class="hr">
-          <div class="phases">
-            <div class="phase">
-              <p class="phase-label">Minute 1 &middot; Standing facilities</p>
-              <h3>Reserve formation</h3>
-              <ul>
-                <li>Fair launch on BNB Chain; liquidity standing facility burned</li>
-                <li>Contract renounced; no discretionary mint</li>
-                <li>Public information desk online (site, correspondence channels)</li>
-                <li>Case file published for open inspection</li>
-              </ul>
-            </div>
-            <div class="phase">
-              <p class="phase-label">Minute 2 &middot; Open market</p>
-              <h3>Market visibility</h3>
-              <ul>
-                <li>Indexer &amp; charting coverage (DexScreener, DexTools)</li>
-                <li>Broad holder distribution target: 1,000+</li>
-                <li>Directory listings (CoinGecko, CoinMarketCap)</li>
-                <li>Community transmission &mdash; research shares, not paid spectacle</li>
-              </ul>
-            </div>
-            <div class="phase">
-              <p class="phase-label">Minute 3 &middot; Supervision</p>
-              <h3>The 100-year audit</h3>
-              <ul>
-                <li>Third-party contract review</li>
-                <li>Secondary-venue listing discussions</li>
-                <li>Archive merchandise: the seal, on cotton</li>
-                <li>Community FOMC treasury &mdash; holder votes on disbursements</li>
-              </ul>
-            </div>
-            <div class="phase">
-              <p class="phase-label">Minute 4 &middot; Full reserve</p>
-              <h3>Permanent record</h3>
-              <ul>
-                <li>Primary-venue listing efforts</li>
-                <li>On-chain archive of the 2014 chain artifacts</li>
-                <li>Holder-funded documentary of the public record</li>
-                <li>Policy stance unchanged: the printer stays off</li>
-              </ul>
-            </div>
+            <p class="disclaimer">If you engage with any modern token using this name, treat it as a separate instrument. DYOR. The case file above stands on its own.</p>
           </div>
         </section>
 
@@ -391,34 +408,34 @@
         <section class="section" id="faq" aria-labelledby="faq-title">
           <div class="section-head">
             <p class="kicker">Public information</p>
-            <h2 id="faq-title">Current FAQs</h2>
-            <p class="section-note">Informing the public about the Federal Reserve Coin.</p>
+            <h2 id="faq-title">Questions about the file</h2>
+            <p class="section-note">Concept, attribution, and scope — not a trading desk FAQ.</p>
           </div>
-          <hr class="hr">
+          <hr class="hr" />
           <div class="panel faq">
             <details open>
-              <summary>Is $FRSC officially connected to CZ or Binance?</summary>
-              <p>No. $FRSC is a community memecoin built on the 2014 history of Federal Reserve Coin. It is not endorsed by, affiliated with or operated by CZ, Binance, BNB Chain or the Federal Reserve System.</p>
-            </details>
-            <details>
-              <summary>Is this the same token as the 2014 coin?</summary>
-              <p>No. The 2014 FRSC was a standalone scrypt proof-of-work chain. This is a BEP-20 token on BNB Chain that revives the ticker, the seal and the story. The original chain is no longer maintained.</p>
+              <summary>What was Federal Reserve Coin actually about?</summary>
+              <p>Satire of central banking and QE, launched as a Bitcointalk coin around the Fed's 100th birthday. The seal, motto, and "unofficial" disclaimer were part of the joke's costume.</p>
             </details>
             <details>
               <summary>Was btcpay86 really CZ?</summary>
-              <p>This portal does not assert official identity. It points to the public post history linked in The receipts. Translate the page, then search for blockchain.info: the account answers support questions and discusses working there &mdash; which matches CZ's publicly known role before Binance. Read the record and decide for yourself.</p>
+              <p>This portal does not assert official identity. It points to Bitcointalk user 202137's public posts — including blockchain.info discussion — which researchers compare to CZ's known early career. Read the receipts and decide.</p>
             </details>
             <details>
-              <summary>What's the tax?</summary>
-              <p>0% on buys, 0% on sells. Permanently. There is no mint function, no blacklist and no pause switch.</p>
+              <summary>Is this site claiming CZ or Binance endorse FRSC?</summary>
+              <p>No. There is no claimed affiliation or endorsement by CZ, Binance, BNB Chain, blockchain.info / Blockchain.com, or the Federal Reserve System.</p>
             </details>
             <details>
-              <summary>Where is the liquidity?</summary>
-              <p>Burned at launch. The LP tokens are sent to the dead address, so the pool cannot be pulled.</p>
+              <summary>Is today's $FRSC the same as the 2014 coin?</summary>
+              <p>No. The 2014 project was a scrypt proof-of-work chain. Modern tickers reuse the name, seal, and story. Technically and legally they are not the same network.</p>
             </details>
             <details>
-              <summary>Will $FRSC be devalued?</summary>
-              <p>Per the 2014 homepage, in capitals, across the seal: WILL NOT BE DEVALUED COINS.</p>
+              <summary>Why isn't this page full of tokenomics and buy buttons?</summary>
+              <p>Because the durable object is the concept and the paper trail. Market mechanics change; the 2014 ANN and Wayback archive do not. See the appendix for a short contemporary note.</p>
+            </details>
+            <details>
+              <summary>Will FRSC be devalued?</summary>
+              <p>Per the 2014 homepage, in capitals: WILL NOT BE DEVALUED COINS.</p>
             </details>
           </div>
         </section>
@@ -429,64 +446,59 @@
         <div class="side-block">
           <h3>On this page</h3>
           <ul class="side-nav-list">
-            <li><a href="#home">Market overview</a></li>
-            <li><a href="#lore">The lore</a></li>
+            <li><a href="#home">Opening brief</a></li>
+            <li><a href="#concept">The concept</a></li>
+            <li><a href="#lore">Timeline</a></li>
+            <li><a href="#btcpay86">btcpay86 / CZ</a></li>
             <li><a href="#receipts">The receipts</a></li>
             <li><a href="#spec">2014 spec sheet</a></li>
-            <li><a href="#tokenomics">Rules of issuance</a></li>
-            <li><a href="#buy">How to buy</a></li>
-            <li><a href="#roadmap">Roadmap</a></li>
-            <li><a href="#faq">Current FAQs</a></li>
+            <li><a href="#appendix">Modern ticker (appendix)</a></li>
+            <li><a href="#faq">Questions</a></li>
           </ul>
         </div>
 
         <div class="side-block">
-          <h3>Quick facts</h3>
+          <h3>File facts</h3>
           <div class="body">
             <table class="quick-facts">
-              <tbody>
-              <tr><th>Ticker</th><td>$FRSC</td></tr>
-              <tr><th>Network</th><td>BNB Smart Chain</td></tr>
-              <tr><th>Standard</th><td>BEP-20</td></tr>
-              <tr><th>Supply</th><td>1,000,000,000</td></tr>
-              <tr><th>Tax</th><td>0% / 0%</td></tr>
-              <tr><th>Launch</th><td>Fair launch</td></tr>
-              <tr><th>Origin</th><td>Bitcointalk, Jan 2014</td></tr>
-              <tr><th>Contract</th><td>TBA</td></tr>
-              </tbody>
+              <tr><th>Name</th><td>Federal Reserve Coin</td></tr>
+              <tr><th>Ticker</th><td>FRSC</td></tr>
+              <tr><th>Announced</th><td>Jan 2014</td></tr>
+              <tr><th>Forum</th><td>Bitcointalk</td></tr>
+              <tr><th>Account</th><td>btcpay86</td></tr>
+              <tr><th>User ID</th><td>202137</td></tr>
+              <tr><th>Original tech</th><td>Scrypt PoW</td></tr>
+              <tr><th>Motto</th><td>Will not be devalued</td></tr>
             </table>
           </div>
         </div>
 
         <div class="side-block">
-          <h3>FRSC Education</h3>
+          <h3>Primary sources</h3>
           <div class="body">
-            <p>The 2014 archive, the spec sheet and the lore.</p>
             <ul>
-              <li><a href="#lore">Historical timeline</a></li>
-              <li><a href="#spec">Original parameters</a></li>
-              <li><a href="https://web.archive.org/web/*/http://federalreservecoin.org/" target="_blank" rel="noopener noreferrer">Wayback Machine</a></li>
               <li><a href="https://bitcointalk.org/index.php?topic=493871.0" target="_blank" rel="noopener noreferrer">ANN thread</a></li>
+              <li><a href="https://bitcointalk.org/index.php?action=profile;u=202137;sa=showPosts" target="_blank" rel="noopener noreferrer">btcpay86 posts</a></li>
+              <li><a href="https://web.archive.org/web/*/http://federalreservecoin.org/" target="_blank" rel="noopener noreferrer">Wayback archive</a></li>
+              <li><a href="#receipts">Full receipts index</a></li>
             </ul>
           </div>
         </div>
 
         <div class="side-block">
-          <h3>Careers</h3>
+          <h3>How to read this</h3>
           <div class="body">
-            <p>Visit our Board of Governors recruitment channel.</p>
-            <p><a class="btn" href="https://t.me/" target="_blank" rel="noopener noreferrer" data-link="telegram">Telegram channel</a></p>
+            <p>Start with <a href="#concept">the concept</a>, then <a href="#btcpay86">the attribution file</a>. Only then open external links — so you know what you're testing.</p>
           </div>
         </div>
 
         <div class="side-block">
-          <h3>Related documents</h3>
+          <h3>Related</h3>
           <div class="body">
             <ul>
-              <li><a href="#receipts">Source verification index</a></li>
-              <li><a href="#tokenomics">Allocation schedule</a></li>
-              <li><a href="#roadmap">FOMC minutes</a></li>
-              <li><a href="#faq">Public Q&amp;A</a></li>
+              <li><a href="#spec">2014 parameters</a></li>
+              <li><a href="#appendix">Contemporary ticker note</a></li>
+              <li><a href="archive/v1-current/">Earlier site snapshot</a></li>
             </ul>
           </div>
         </div>
@@ -499,41 +511,41 @@
       <div class="footer-grid">
         <div>
           <h4>Federal Reserve Coin</h4>
-          <p>Community research portal for $FRSC. Not an official website of the Federal Reserve System, CZ, Binance, or BNB Chain.</p>
+          <p>Community research archive for the 2014 concept and the btcpay86 public record. Not an official website of the Federal Reserve System, CZ, Binance, or BNB Chain.</p>
           <p>WILL NOT BE DEVALUED COINS.</p>
           <p><a href="archive/v1-current/">Archived site snapshot (v1)</a></p>
         </div>
         <div>
-          <h4>Current FAQs</h4>
+          <h4>Read first</h4>
           <ul>
-            <li><a href="#faq">Affiliation &amp; disclaimer</a></li>
-            <li><a href="#faq">2014 vs BEP-20</a></li>
-            <li><a href="#faq">Tax &amp; liquidity</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Careers</h4>
-          <ul>
-            <li><a href="https://t.me/" target="_blank" rel="noopener noreferrer" data-link="telegram">Board of Governors channel</a></li>
-            <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" data-link="x">Public information desk</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>FRSC Education</h4>
-          <ul>
-            <li><a href="#lore">The lore</a></li>
-            <li><a href="#spec">2014 archive</a></li>
+            <li><a href="#concept">The concept</a></li>
+            <li><a href="#btcpay86">btcpay86 / CZ</a></li>
             <li><a href="#receipts">The receipts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Documents</h4>
+          <ul>
+            <li><a href="#spec">2014 spec sheet</a></li>
+            <li><a href="#lore">Timeline</a></li>
+            <li><a href="#appendix">Appendix</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>About</h4>
+          <ul>
+            <li><a href="#faq">Questions</a></li>
+            <li><a href="#faq">Affiliation disclaimer</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; 2014&ndash;<span id="year">2026</span> Federal Reserve Coin community &middot; Memecoin &middot; DYOR</span>
+        <span>© 2014–2026 Federal Reserve Coin research community · DYOR</span>
         <span>This's Not The Fed's Official Website.</span>
       </div>
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

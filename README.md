@@ -1,15 +1,16 @@
-# Federal Reserve Coin ($FRSC) — website
+# Federal Reserve Coin ($FRSC) — Historical Case File
 
-Static site (no build step, no dependencies). BNB Chain theme, rebuilt from the original
-2014 `federalreservecoin.org` layout.
+Static site, no build step, no dependencies. Institutional research-portal design
+(off-white / olive / gold), deployed as a Render Static Site.
 
 ```
-frsc/
-├─ index.html          # the whole page
-├─ styles.css          # BNB gold / near-black theme
-├─ app.js              # CONFIG (links + contract), copy button, menu, scroll reveal
-├─ server.mjs          # tiny local preview server (node only)
-└─ assets/frsc-seal.svg
+index.html                  # the whole page
+css/styles.css              # institutional design system
+js/main.js                  # copy-contract button + nav scrollspy
+assets/seal.png             # seal used on the page
+assets/seal-original.png    # untouched source of the seal
+archive/v1-current/         # earlier version, reachable at /archive/v1-current/
+server.mjs                  # local preview only (not needed on Render)
 ```
 
 ## Run locally
@@ -20,43 +21,36 @@ node frsc/server.mjs
 
 Then open http://localhost:4321
 
-## Before launch — edit these
+## Before launch — what to edit
 
-**1. `app.js` → `CONFIG`** (the only file you need to touch):
+**Contract address** — `index.html`, the contract box (search for `contract-address`).
+Two spots, same value:
 
-```js
-const CONFIG = {
-  contract: '',                                  // paste the BEP-20 address → CA box + chart/swap deep links
-  links: {
-    swap:     'https://pancakeswap.finance/',
-    chart:    'https://dexscreener.com/bsc',
-    telegram: 'https://t.me/',
-    x:        'https://x.com/'
-  }
-};
+```html
+<code id="contract-address">0xYourAddress</code>
+<button ... id="copy-contract" data-copy="0xYourAddress">Copy</button>
 ```
 
-Once `contract` is set, the chart and buy buttons auto-point to
-`dexscreener.com/bsc/<CA>` and `pancakeswap.finance/?outputCurrency=<CA>`.
+**Social / trading links** — `index.html`, search for `t.me` and `x.com` in the topbar
+and footer, plus any PancakeSwap / DexScreener links you want to add.
 
-**2. Supply numbers** — `index.html`, the Tokenomics section (`1,000,000,000` and the
-90 / 5 / 5 legend). If you change the split, update the ring in `styles.css`:
-circumference is `477.5`, so `x%` → `stroke-dasharray: 477.5*x/100 477.5` with each
-following ring offset by the sum of the previous ones.
+## Deploy (Render)
 
-**3. Logo** — `assets/frsc-seal.png` is the official Federal Reserve seal, background
-removed (transparent), 720x720. To swap it, keep the same filename or update the 5
-references in `index.html` (og:image, favicon, nav, hero, footer).
+Already wired to GitHub: `nyanmusk9-ops/frsc-site`, branch `main`.
 
-## Deploy
+- Render → **Static Site** → repo `frsc-site`
+- Build Command: *(empty)*
+- Publish Directory: `.`
 
-Any static host — drag the `frsc/` folder into Netlify/Vercel/Cloudflare Pages, or push it
-to a GitHub repo and turn on Pages. `server.mjs` is only for local preview and can be left
-out of the upload.
+To update the live site:
+
+```bash
+cd "C:\Users\usuario\Desktop\BUNDLE\frsc"; git add -A; git commit -m "update"; git push
+```
+
+Render redeploys automatically in ~30 s.
 
 ## Content notes
 
-- The lore section links to the public Bitcointalk sources (launch thread, `btcpay86`
-  post history, the blockchain.info reply) and to the Wayback capture of the original site.
-- The claims are framed as community research, and the footer carries an explicit
-  no-affiliation + not-financial-advice disclaimer — keep it there.
+- Claims about btcpay86 / CZ are framed as community research and link to the public
+  Bitcointalk sources; the footer carries the no-affiliation + DYOR disclaimer. Keep it.
