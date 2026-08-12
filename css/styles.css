@@ -1142,3 +1142,59 @@ table.data tr:nth-child(odd) td {
     font-size: 11px;
   }
 }
+
+/* —— Contract (CA) bar in the masthead —— */
+.ca-wrap {
+  margin-top: 12px;
+}
+
+.ca-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  background: var(--off-white);
+  border: 1px solid var(--deep-olive);
+  border-left: 4px solid var(--gold);
+  padding: 7px 10px;
+  font-family: var(--sans);
+  font-size: 12px;
+}
+
+.ca-label {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+}
+
+.ca-value {
+  flex: 1 1 220px;
+  min-width: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12.5px;
+  color: var(--text);
+  word-break: break-all;
+}
+
+.ca-bar.is-live .ca-value {
+  color: var(--deep-olive);
+  font-weight: 700;
+}
+
+.ca-bar .btn {
+  padding: 4px 10px;
+}
+
+.ca-note {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 640px) {
+  .ca-note { display: none; }
+  .ca-value { flex-basis: 100%; }
+}

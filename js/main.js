@@ -1,6 +1,44 @@
 (function () {
   "use strict";
 
+  /* ══════════════════════════════════════════════════════════════
+     CONTRACT ADDRESS — edit this one line when the CA goes live.
+     Example: var CONTRACT = "0x1234abcd...ef90";
+     It fills the header bar and the issuance section automatically.
+     ══════════════════════════════════════════════════════════════ */
+  var CONTRACT = "";
+  var CA_PLACEHOLDER = "TBA — not published yet";
+
+  (function applyContract() {
+    var live = CONTRACT.trim();
+    var text = live || CA_PLACEHOLDER;
+    Array.prototype.forEach.call(document.querySelectorAll("[data-ca]"), function (el) {
+      el.textContent = text;
+    });
+    Array.prototype.forEach.call(document.querySelectorAll("[data-copy], [data-ca-copy]"), function (btn) {
+      btn.setAttribute("data-copy", text);
+    });
+    Array.prototype.forEach.call(document.querySelectorAll(".ca-bar"), function (bar) {
+      if (live) bar.classList.add("is-live");
+    });
+  })();
+
+  Array.prototype.forEach.call(document.querySelectorAll("[data-ca-copy]"), function (btn) {
+    btn.addEventListener("click", function () {
+      var text = btn.getAttribute("data-copy") || "";
+      var original = btn.textContent;
+      function finish(ok) {
+        btn.textContent = ok ? "Copied" : "Failed";
+        setTimeout(function () { btn.textContent = original; }, 1400);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function () { finish(true); }).catch(function () { finish(fallbackCopy(text)); });
+      } else {
+        finish(fallbackCopy(text));
+      }
+    });
+  });
+
   var copyBtn = document.getElementById("copy-contract");
   if (copyBtn) {
     copyBtn.addEventListener("click", function () {
