@@ -19,7 +19,9 @@ const TYPES = {
 
 createServer(async (req, res) => {
   const url = decodeURIComponent(req.url.split('?')[0]);
-  const rel = normalize(url === '/' ? 'index.html' : url.replace(/^\/+/, ''));
+  // directory paths ("/" or "/archive/v1-current/") serve their index.html, like static hosts do
+  const clean = url.replace(/^\/+/, '');
+  const rel = normalize(clean === '' || clean.endsWith('/') ? clean + 'index.html' : clean);
   if (rel.startsWith('..')) { res.writeHead(403).end('Forbidden'); return; }
   try {
     const body = await readFile(join(ROOT, rel));
