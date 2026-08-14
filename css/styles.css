@@ -1585,3 +1585,42 @@ table.data tr:nth-child(odd) td {
   color: var(--forest);
   text-decoration: underline;
 }
+
+/* —— CA bar: BscScan + X links —— */
+.ca-scan,
+.ca-x {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--cream);
+  text-decoration: none;
+  border: 1px solid rgba(244, 244, 238, 0.45);
+  padding: 4px 8px;
+  white-space: nowrap;
+}
+
+.ca-scan:hover,
+.ca-x:hover {
+  background: rgba(244, 244, 238, 0.14);
+  border-color: var(--gold);
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.ca-x {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+@media (max-width: 720px) {
+  .ca-scan { display: none; }
+}
+
+/* keep the full address on one line once there is room for it */
+@media (min-width: 721px) {
+  .ca-code {
+    white-space: nowrap;
+    word-break: normal;
+  }
+}
